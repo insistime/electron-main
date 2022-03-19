@@ -7,7 +7,7 @@ var app = require('electron').app;
 var q = require('qiao-electron');
 
 // win
-var win = require('../window.js');
+var win = require('../window/window.js');
 
 // create window
 win.createLoginWindow();
