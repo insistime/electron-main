@@ -20,9 +20,6 @@ require('./init-menu.js');
 
 // app init
 app.whenReady().then(() => {
-  // set about version
-  q.setAboutVersion(require('../../package.json').version);
-
   // create window
   win.createLoginWindow();
 
