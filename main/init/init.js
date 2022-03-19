@@ -1,11 +1,10 @@
 'use strict';
 
-// electron
-var electron = require('electron');
+// q
 var q = require('qiao-electron');
 
 // app
-var app = electron.app;
+var app = require('electron').app;
 
 // win
 var win = require('../window.js');
@@ -16,11 +15,11 @@ require('./init-sentry.js');
 // init log
 require('./init-log.js');
 
+// init menu
+require('./init-menu.js');
+
 // app init
 app.whenReady().then(() => {
-  // set application menu
-  q.setApplicationMenu();
-  
   // set about version
   q.setAboutVersion(require('../../package.json').version);
 
