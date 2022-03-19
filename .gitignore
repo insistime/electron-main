@@ -1,0 +1,11 @@
+.idea
+.project
+.settings
+.externalToolBuilders
+
+electron-dist
+electron-out
+node_modules
+package-lock.json
+
+*.log
