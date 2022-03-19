@@ -1,8 +1,10 @@
-// init ipc log
-import { initIPCLog } from 'qiao-electron';
+'use strict';
 
-// ipc log channel
-import { ipcLogChannel } from '../electron.config.js';
+// q
+var q = require('qiao-electron');
+
+// electron config
+var config = require('../electron.config.js');
 
 // init
-initIPCLog(ipcLogChannel);
+q.initIPCLog(config.ipcLogChannel);

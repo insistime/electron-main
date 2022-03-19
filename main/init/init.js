@@ -10,8 +10,11 @@ var app = electron.app;
 // win
 var win = require('../window.js');
 
-// sentry inti
+// init sentry
 require('./init-sentry.js');
+
+// init log
+require('./init-log.js');
 
 // app init
 app.whenReady().then(() => {

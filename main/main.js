@@ -6,4 +6,3 @@ require('./app-event.js');
 
 // ipc
 require('./ipc/ipc.js');
-require('./ipc/ipc-log.js');
