@@ -4,6 +4,7 @@
   "description": "vq",
   "main": "./main/main.js",
   "dependencies": {
+    "@sentry/electron": "^3.0.4",
     "qiao-electron": "^0.1.0"
   }
 }
