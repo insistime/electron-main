@@ -5,6 +5,6 @@
   "main": "./main/main.js",
   "dependencies": {
     "@sentry/electron": "^3.0.4",
-    "qiao-electron": "^0.1.0"
+    "qiao-electron": "^0.1.1"
   }
 }

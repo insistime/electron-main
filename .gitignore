@@ -9,4 +9,4 @@ package-lock.json
 renderer-index
 renderer-login
 
-main/config.json
+main/electron.config.json
