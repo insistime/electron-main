@@ -1,7 +1,9 @@
 'use strict';
 
-// app
+// init
 require('./init/init.js');
+
+// app
 require('./app-event.js');
 
 // ipc
