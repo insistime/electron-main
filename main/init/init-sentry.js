@@ -1,12 +1,10 @@
-// sentry
-var sentry = require('@sentry/electron');
+'use strict';
 
-// config
+// q
+var q = require('qiao-electron');
+
+// electron config
 var config = require('../electron.config.json');
 
-/**
- * sentry init
- */
-sentry.init({
-  dsn: config.sentry
-});
+// init
+q.initSentry(config.sentry);
