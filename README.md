@@ -6,4 +6,4 @@
 2. init ipc log
 3. init menu
 4. init window
-
+5. init ok
