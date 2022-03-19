@@ -11,7 +11,7 @@ var q = require('qiao-electron');
  * @returns 
  */
 exports.createLoginWindow = function(){
-  var loginFilePath = path.join(__dirname, '../renderer-login/dist/index.html');
+  var loginFilePath = path.join(__dirname, '../renderer-login/index.html');
 
   var options = {
     width: 200,
@@ -38,7 +38,7 @@ exports.openIndexWindow = function(){
   loginWindow.close();
 
   // open index
-  var indexFilePath = path.join(__dirname, '../renderer-index/dist/index.html');
+  var indexFilePath = path.join(__dirname, '../renderer-index/index.html');
   var options = {
     width: 800,
     height: 600,
