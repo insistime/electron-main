@@ -18,6 +18,7 @@ exports.createLoginWindow = function(){
     height: 300,
     center: true,
     maximizable: false,
+    titleBarStyle: 'hidden',
     fullscreenable: false,
     backgroundColor: '#66CD00'
   };
