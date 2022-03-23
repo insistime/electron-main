@@ -14,6 +14,7 @@ exports.createLoginWindow = function(){
   var loginFilePath = path.join(__dirname, '../../renderer-login/index.html');
 
   var options = {
+    show: false,
     width: 200,
     height: 300,
     center: true,
