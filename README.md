@@ -3,6 +3,7 @@
 ## version
 ### 0.0.2.20220323
 1. window ready to show
+2. ipc log
 
 ### 0.0.1.20220319
 1. init project
