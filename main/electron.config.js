@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-    ipcLogChannel: 'renderer-log'
+    ipcLogChannel: 'ipc-log'
 };
