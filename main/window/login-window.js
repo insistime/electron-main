@@ -12,6 +12,7 @@ var q = require('qiao-electron');
  */
 module.exports = function(){
   var loginFilePath = path.resolve(__dirname, '../../renderer/login.html');
+  var loginPreloadPath = path.resolve(__dirname, './login-preload.js');
 
   var options = {
     show: false,
@@ -23,7 +24,10 @@ module.exports = function(){
     fullscreenable: false,
     backgroundColor: '#000',
     titleBarStyle: 'hiddenInset',
+    webPreferences: {
+      preload: loginPreloadPath
+    }
   };
 
-  return q.openWindowByFile(loginFilePath, options, true);
+  return q.openWindowByFile(loginFilePath, options);
 };
