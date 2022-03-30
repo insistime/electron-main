@@ -7,6 +7,7 @@
 3. open window by loginname
 4. ls
 5. open url
+6. shell
 
 ### 0.0.2.20220323
 1. window ready to show
