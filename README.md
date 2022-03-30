@@ -3,6 +3,7 @@
 ## version
 ### 0.0.3.20220330
 1. preload
+2. add qiao-config
 
 ### 0.0.2.20220323
 1. window ready to show
