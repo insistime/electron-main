@@ -9,8 +9,5 @@ require('./ipc-ls.js');
 // ipc app
 require('./ipc-app.js');
 
-// ipc shell
-require('./ipc-shell.js');
-
 // ipc window
 require('./ipc-window.js');

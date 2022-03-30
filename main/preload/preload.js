@@ -1,5 +1,8 @@
 'use strict';
 
+// q
+const { shellOpenUrl } = require('qiao-electron');
+
 // log
 const { log } = require('./preload-log.js');
 
@@ -9,11 +12,11 @@ const { lsAll, lsGet, lsSet, lsDel } = require('./preload-ls.js');
 // app
 const { getAppVersion } = require('./preload-app.js');
 
-// shell
-const { openUrl } = require('./preload-shell.js');
-
 // window
 const { toIndexWindow } = require('./preload-window.js');
+
+// exports shell
+exports.shellOpenUrl = shellOpenUrl;
 
 // exports log
 exports.log = log;
@@ -26,9 +29,6 @@ exports.lsDel = lsDel;
 
 // exports app
 exports.getAppVersion = getAppVersion;
-
-// exports shell
-exports.openUrl = openUrl;
 
 // exports window
 exports.toIndexWindow = toIndexWindow;

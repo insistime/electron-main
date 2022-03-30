@@ -5,7 +5,7 @@
   "main": "./main/main.js",
   "dependencies": {
     "qiao-config": "^0.0.5",
-    "qiao-electron": "^0.1.6",
+    "qiao-electron": "^0.1.7",
     "qiao-log": "^0.0.1"
   }
 }

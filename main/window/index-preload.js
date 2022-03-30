@@ -6,11 +6,11 @@ const { contextBridge } = require('electron');
 // preload
 const { 
     log,
-    openUrl
+    shellOpenUrl
 } = require('../preload/preload.js');
 
 // electron
 contextBridge.exposeInMainWorld('electron', {
     log,
-    openUrl
+    shellOpenUrl
 });
