@@ -4,9 +4,7 @@
 const { ipcRenderer } = require('electron');
 
 // const
-const IPC_LOG = 'ipc-log';
-const IPC_TO_INDEX = 'ipc-to-index';
-const IPC_GET_APP_VERSION = 'ipc-get-app-version';
+const { IPC_LOG, IPC_TO_INDEX, IPC_GET_APP_VERSION } = require('../_util/constant.js');
 
 /**
  * log

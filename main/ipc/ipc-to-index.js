@@ -9,8 +9,11 @@ const { ipcMain } = require('electron');
 // win
 const win = require('../window/window.js');
 
+// const
+const { IPC_TO_INDEX } = require('../_util/constant.js');
+
 // ipc to index
-ipcMain.on('ipc-to-index', (event, arg) => {
+ipcMain.on(IPC_TO_INDEX, (event, arg) => {
   const wins = window.getAllWindows();
   if(!wins || !wins.length) return;
 

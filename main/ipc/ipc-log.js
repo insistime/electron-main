@@ -7,7 +7,7 @@ const { ipcMain } = require('electron');
 const { log } = require('../_util/log.js');
 
 // const
-const IPC_LOG = 'ipc-log';
+const { IPC_LOG } = require('../_util/constant.js');
 
 // ipc log
 ipcMain.on(IPC_LOG, (event, arg) => {

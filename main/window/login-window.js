@@ -10,7 +10,7 @@ const { openWindowByFile } = require('qiao-electron');
  * open login window
  * @returns 
  */
-module.exports = function(){
+module.exports = () => {
   const loginFilePath = path.resolve(__dirname, '../../renderer/login.html');
   const loginPreloadPath = path.resolve(__dirname, '../preload/login-preload.js');
 

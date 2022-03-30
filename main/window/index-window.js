@@ -10,7 +10,7 @@ const { openWindowByFile } = require('qiao-electron');
  * open index window
  * @returns 
  */
-module.exports = function(){
+module.exports = () => {
   const indexFilePath = path.resolve(__dirname, '../../renderer/index.html');
   const indexPreloadPath = path.resolve(__dirname, '../preload/index-preload.js');
 
