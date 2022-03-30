@@ -4,6 +4,7 @@
   "description": "vq",
   "main": "./main/main.js",
   "dependencies": {
-    "qiao-electron": "^0.1.5"
+    "qiao-electron": "^0.1.5",
+    "qiao-log": "^0.0.1"
   }
 }

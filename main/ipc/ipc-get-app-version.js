@@ -1,12 +1,12 @@
 'use strict';
 
 // ipcMain
-var ipcMain = require('electron').ipcMain;
+const { ipcMain } = require('electron');
 
 // version
-var version = require('../../package.json').version;
+const { version } = require('../../package.json');
 
 // ipc get app version
-ipcMain.handle('ipc-get-app-version', function(event, ...args){
+ipcMain.handle('ipc-get-app-version', (event, ...args) => {
   return version;
 });

@@ -1,18 +1,18 @@
 'use strict';
 
 // app
-var app = require('electron').app;
+const { app } = require('electron');
 
 // q
-var q = require('qiao-electron');
+const { window } = require('qiao-electron');
 
 // win
-var win = require('../window/window.js');
+const win = require('../window/window.js');
 
 // open window
 win.openLoginWindow();
 
 // activate
-app.on('activate', function(){
-    if(q.window.getAllWindows().length === 0) win.openLoginWindow();
+app.on('activate', () => {
+    if(window.getAllWindows().length === 0) win.openLoginWindow();
 });

@@ -1,20 +1,20 @@
 'use strict';
 
 // q
-var q = require('qiao-electron');
+const { window } = require('qiao-electron');
 
 // ipcMain
-var ipcMain = require('electron').ipcMain;
+const { ipcMain } = require('electron');
 
 // win
-var win = require('../window/window.js');
+const win = require('../window/window.js');
 
 // ipc to index
-ipcMain.on('ipc-to-index', function(event, arg){
-  var wins = q.window.getAllWindows();
+ipcMain.on('ipc-to-index', (event, arg) => {
+  const wins = window.getAllWindows();
   if(!wins || !wins.length) return;
 
-  var loginWindow = wins[0];
+  const loginWindow = wins[0];
   if(!loginWindow) return;
 
   loginWindow.close();

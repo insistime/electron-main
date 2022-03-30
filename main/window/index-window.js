@@ -1,20 +1,20 @@
 'use strict';
 
 // path
-var path = require('path');
+const path = require('path');
 
 // qiao-electron
-var q = require('qiao-electron');
+const { openWindowByFile } = require('qiao-electron');
 
 /**
  * open index window
  * @returns 
  */
 module.exports = function(){
-  var indexFilePath = path.resolve(__dirname, '../../renderer/index.html');
-  var indexPreloadPath = path.resolve(__dirname, '../preload/index-preload.js');
+  const indexFilePath = path.resolve(__dirname, '../../renderer/index.html');
+  const indexPreloadPath = path.resolve(__dirname, '../preload/index-preload.js');
 
-  var options = {
+  const options = {
     show: false,
     width: 600,
     height: 800,
@@ -25,5 +25,5 @@ module.exports = function(){
     }
   };
 
-  return q.openWindowByFile(indexFilePath, options);
+  return openWindowByFile(indexFilePath, options);
 };

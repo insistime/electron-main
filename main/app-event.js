@@ -1,10 +1,7 @@
 'use strict';
 
 // electron
-var electron = require('electron');
-
-// app
-var app = electron.app;
+const { app } = require('electron');
 
 // window all closed
 app.on('window-all-closed', function(){

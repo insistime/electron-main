@@ -1,13 +1,13 @@
 'use strict';
 
 // q
-var q = require('qiao-electron');
+const { setApplicationMenu, setAboutVersion } = require('qiao-electron');
 
 // version
-var version = require('../../package.json').version;
+const { version } = require('../../package.json');
 
 // set application menu
-q.setApplicationMenu();
+setApplicationMenu();
 
 // set about version
-q.setAboutVersion(version);
+setAboutVersion(version);

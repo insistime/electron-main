@@ -8,7 +8,6 @@ const IPC_LOG = 'ipc-log';
 const IPC_TO_INDEX = 'ipc-to-index';
 const IPC_GET_APP_VERSION = 'ipc-get-app-version';
 
-
 /**
  * log
  * @param {*} msg 

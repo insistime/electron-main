@@ -1,10 +1,7 @@
 'use strict';
 
 // app
-var app = require('electron').app;
-
-// init log
-require('./init-log.js');
+const { app } = require('electron');
 
 // init menu
 require('./init-menu.js');
