@@ -12,9 +12,6 @@ shellIPCInit();
 // init menu
 require('./init-menu.js');
 
-// init shell
-require('./init-shell.js');
-
 // init ipc
 require('../ipc/ipc.js');
 
