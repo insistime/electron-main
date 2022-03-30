@@ -5,6 +5,7 @@
 1. preload
 2. add qiao-config
 3. open window by loginname
+4. ls
 
 ### 0.0.2.20220323
 1. window ready to show
