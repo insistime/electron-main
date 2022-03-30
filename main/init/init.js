@@ -3,6 +3,12 @@
 // app
 const { app } = require('electron');
 
+// q
+const { shellIPCInit } = require('qiao-electron');
+
+// init
+shellIPCInit();
+
 // init menu
 require('./init-menu.js');
 

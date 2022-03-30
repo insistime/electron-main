@@ -4,10 +4,8 @@
 const { contextBridge } = require('electron');
 
 // preload
-const { 
-    log,
-    shellOpenUrl
-} = require('../preload/preload.js');
+const { shellOpenUrl } = require('qiao-electron');
+const { log } = require('../preload/preload.js');
 
 // electron
 contextBridge.exposeInMainWorld('electron', {

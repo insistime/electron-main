@@ -1,8 +1,5 @@
 'use strict';
 
-// q
-const { shellOpenUrl } = require('qiao-electron');
-
 // log
 const { log } = require('./preload-log.js');
 
@@ -14,9 +11,6 @@ const { getAppVersion } = require('./preload-app.js');
 
 // window
 const { toIndexWindow } = require('./preload-window.js');
-
-// exports shell
-exports.shellOpenUrl = shellOpenUrl;
 
 // exports log
 exports.log = log;
