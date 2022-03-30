@@ -12,7 +12,7 @@ const { openWindowByFile } = require('qiao-electron');
  */
 module.exports = () => {
   const loginFilePath = path.resolve(__dirname, '../../renderer/login.html');
-  const loginPreloadPath = path.resolve(__dirname, '../preload/login-preload.js');
+  const loginPreloadPath = path.resolve(__dirname, './login-preload.js');
 
   const options = {
     show: false,
