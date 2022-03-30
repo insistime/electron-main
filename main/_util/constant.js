@@ -11,4 +11,5 @@ module.exports = {
     IPC_LS_GET : 'ipc-ls-get',
     IPC_LS_SET : 'ipc-ls-set',
     IPC_LS_DEL : 'ipc-ls-del',
+    IPC_OPEN_URL : 'ipc-open-url',
 };
