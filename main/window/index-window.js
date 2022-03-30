@@ -12,7 +12,7 @@ var q = require('qiao-electron');
  */
 module.exports = function(){
   var indexFilePath = path.resolve(__dirname, '../../renderer/index.html');
-  var indexPreloadPath = path.resolve(__dirname, './index-preload.js');
+  var indexPreloadPath = path.resolve(__dirname, '../preload/index-preload.js');
 
   var options = {
     show: false,

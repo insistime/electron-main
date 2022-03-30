@@ -12,7 +12,7 @@ var q = require('qiao-electron');
  */
 module.exports = function(){
   var loginFilePath = path.resolve(__dirname, '../../renderer/login.html');
-  var loginPreloadPath = path.resolve(__dirname, './login-preload.js');
+  var loginPreloadPath = path.resolve(__dirname, '../preload/login-preload.js');
 
   var options = {
     show: false,
