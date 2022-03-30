@@ -3,9 +3,6 @@
 // app
 var app = require('electron').app;
 
-// init sentry
-require('./init-sentry.js');
-
 // init log
 require('./init-log.js');
 
