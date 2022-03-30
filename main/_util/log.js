@@ -1,10 +1,24 @@
 'use strict';
 
+// path
+const path = require('path');
+
+// electron
+const { app } = require('electron');
+
 // qiao-log
 const { getLogger } = require('qiao-log');
 
+// get log path
+const getLogPath = () => {
+    const logsPath = app.getPath('logs');
+    const logPath = path.resolve(logsPath, './electron.log');
+    return logPath;
+};
+
 // Logger
-const Logger = getLogger('electron.log');
+const logPath = getLogPath();
+const Logger = getLogger(logPath);
 
 /**
  * info
