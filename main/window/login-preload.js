@@ -4,10 +4,10 @@
 const { contextBridge } = require('electron');
 
 // preload
-const { log, toIndex } = require('./preload');
+const { log, toIndexWindow } = require('../preload/preload.js');
 
 // electron
 contextBridge.exposeInMainWorld('electron', {
     log,
-    toIndex
+    toIndexWindow
 });

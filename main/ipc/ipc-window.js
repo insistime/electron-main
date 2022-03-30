@@ -6,17 +6,14 @@ const { window } = require('qiao-electron');
 // ipcMain
 const { ipcMain } = require('electron');
 
-// ls
-const ls = require('../_util/config.js');
-
 // win
 const win = require('../window/window.js');
 
 // const
-const { IPC_TO_INDEX } = require('../_util/constant.js');
+const { IPC_TO_INDEX_WINDOW } = require('../_util/constant.js');
 
 // ipc to index
-ipcMain.on(IPC_TO_INDEX, (event, arg) => {
+ipcMain.on(IPC_TO_INDEX_WINDOW, (event, arg) => {
   const wins = window.getAllWindows();
   if(!wins || !wins.length) return;
 
@@ -25,7 +22,4 @@ ipcMain.on(IPC_TO_INDEX, (event, arg) => {
 
   loginWindow.close();
   win.openIndexWindow();
-
-  // ls
-  ls.config('loginName', 'admin');
 });

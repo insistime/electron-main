@@ -3,8 +3,11 @@
 // ipc log
 require('./ipc-log.js');
 
-// ipc get app version
-require('./ipc-get-app-version.js');
+// ipc ls
+require('./ipc-ls.js');
 
-// ipc to index
-require('./ipc-to-index.js');
+// ipc app
+require('./ipc-app.js');
+
+// ipc window
+require('./ipc-window.js');

@@ -1,31 +1,28 @@
 'use strict';
 
-// electron
-const { ipcRenderer } = require('electron');
+// log
+const { log } = require('./preload-log.js');
 
-// const
-const { IPC_LOG, IPC_TO_INDEX, IPC_GET_APP_VERSION } = require('../_util/constant.js');
+// ls
+const { lsAll, lsGet, lsSet, lsDel } = require('./preload-ls.js');
 
-/**
- * log
- * @param {*} msg 
- * @param {*} type info,warn,error
- */
-exports.log = (msg, type) => {
-    ipcRenderer.send(IPC_LOG, {msg, type});
-};
+// app
+const { getAppVersion } = require('./preload-app.js');
 
-/**
- * toIndex
- */
- exports.toIndex = () => {
-    ipcRenderer.send(IPC_TO_INDEX);
-};
+// window
+const { toIndexWindow } = require('./preload-window.js');
 
-/**
- * getAppVersion
- * @returns version
- */
-exports.getAppVersion = async () => {
-    return await ipcRenderer.invoke(IPC_GET_APP_VERSION);
-};
+// exports log
+exports.log = log;
+
+// exports ls
+exports.lsAll = lsAll;
+exports.lsGet = lsGet;
+exports.lsSet = lsSet;
+exports.lsDel = lsDel;
+
+// exports app
+exports.getAppVersion = getAppVersion;
+
+// exports window
+exports.toIndexWindow = toIndexWindow;

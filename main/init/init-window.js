@@ -7,7 +7,7 @@ const { app } = require('electron');
 const { window } = require('qiao-electron');
 
 // ls
-const ls = require('../_util/config.js');
+const ls = require('../_util/ls.js');
 
 // win
 const win = require('../window/window.js');
