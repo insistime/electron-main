@@ -35,7 +35,7 @@ exports.error = (msg) => {
  * @param {*} msg 
  * @param {*} type 
  */
-exports.error = (msg, type) => {
+exports.log = (msg, type) => {
     let _type = type || 'info';
     
     if(_type == 'info')     Logger.info(msg);
