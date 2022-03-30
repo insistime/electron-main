@@ -4,10 +4,7 @@
 const { app } = require('electron');
 
 // q
-const { window } = require('qiao-electron');
-
-// ls
-const ls = require('../_util/ls.js');
+const { ls, window } = require('qiao-electron');
 
 // win
 const win = require('../window/window.js');
@@ -19,7 +16,9 @@ app.on('activate', () => {
 
 // open window
 const openWindow = () => {
-    const loginName = ls.config('loginName');
+    const _ls = ls();
+    
+    const loginName = _ls.config('loginName');
     if(loginName){
         win.openIndexWindow();
     }else{
