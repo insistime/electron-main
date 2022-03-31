@@ -4,7 +4,7 @@
 const { app } = require('electron');
 
 // q
-const { appIPCInit, logIPCInit, lsIPCInit, shellIPCInit } = require('qiao-electron');
+const { appIPCInit, logIPCInit, lsIPCInit, shellIPCInit, shortcutInit } = require('qiao-electron');
 
 // version
 const { version } = require('../../package.json');
@@ -21,11 +21,15 @@ lsIPCInit();
 // init shell
 shellIPCInit();
 
+// init shortcut
+shortcutInit();
+
 // init menu
 require('./init-menu.js');
 
 // init ipc
 require('../ipc/ipc.js');
+
 
 // app init
 app.whenReady().then(() => {
