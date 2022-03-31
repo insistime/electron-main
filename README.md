@@ -4,6 +4,7 @@
 ### 0.0.4.20220331
 1. log init
 2. shortcut
+3. darkmode
 
 ### 0.0.3.20220330
 1. preload

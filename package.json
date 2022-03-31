@@ -1,6 +1,6 @@
 {
   "name": "vq",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "vq",
   "main": "./main/main.js",
   "dependencies": {
