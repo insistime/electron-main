@@ -3,7 +3,7 @@
 // q
 const { window } = require('qiao-electron');
 
-// ipcMain
+// electron
 const { ipcMain } = require('electron');
 
 // win

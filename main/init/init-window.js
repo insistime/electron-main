@@ -1,6 +1,6 @@
 'use strict';
 
-// app
+// electron
 const { app } = require('electron');
 
 // q

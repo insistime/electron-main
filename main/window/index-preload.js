@@ -10,9 +10,11 @@ const {
     shellOpenUrl,
     shortcutGlobal,
 } = require('qiao-electron');
+const { darkModeChange } = require('../preload/preload.js');
 
 // electron
 contextBridge.exposeInMainWorld('electron', {
+    darkModeChange,
     log,
     lsAll, lsGet, lsSet, lsDel,
     shellOpenUrl,
