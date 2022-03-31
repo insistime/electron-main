@@ -4,7 +4,13 @@
 const { app } = require('electron');
 
 // q
-const { logIPCInit, lsIPCInit, shellIPCInit } = require('qiao-electron');
+const { appIPCInit, logIPCInit, lsIPCInit, shellIPCInit } = require('qiao-electron');
+
+// version
+const { version } = require('../../package.json');
+
+// init app
+appIPCInit(version);
 
 // init log
 logIPCInit();
