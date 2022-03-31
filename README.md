@@ -1,6 +1,9 @@
 # electron-main
 
 ## version
+### 0.0.4.20220331
+1. log init
+
 ### 0.0.3.20220330
 1. preload
 2. add qiao-config
