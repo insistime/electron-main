@@ -3,6 +3,7 @@
 ## version
 ### 0.0.5.20220401
 1. dev window
+2. ipc 
 
 ### 0.0.4.20220331
 1. log init
