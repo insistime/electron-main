@@ -1,17 +1,17 @@
 'use strict';
 
 // electron
-const { app } = require('electron');
+const { app, BrowserWindow } = require('electron');
 
 // q
-const { ls, window } = require('qiao-electron');
+const { ls } = require('qiao-electron');
 
 // win
 const win = require('../window/window.js');
 
 // activate
 app.on('activate', () => {
-    if(window.getAllWindows().length === 0) win.openLoginWindow();
+    if(BrowserWindow.getAllWindows().length === 0) win.openLoginWindow();
 });
 
 // open window

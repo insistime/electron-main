@@ -11,7 +11,6 @@ const { shortcutShowMenu } = require('../shortcut/shortcut.js');
 
 // ipc shortcut global
 ipcMain.handle(IPC_SHORTCUT_GLOBAL, (event, ...args) => {
-    console.log(args);
     // check
     const shortcutKey = args[0];
     const shortcutCallbackName = args[1];
