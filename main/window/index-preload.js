@@ -5,18 +5,24 @@ const { contextBridge } = require('electron');
 
 // preload
 const { 
-    darkModeChange,
-    log,
-    lsAll, lsGet, lsSet, lsDel,
-    shellOpenUrl,
-    shortcutGlobal,
+    darkModeChangeIPC,
+    logIPC,
+    lsAllIPC, 
+    lsGetIPC, 
+    lsSetIPC, 
+    lsDelIPC,
+    shellOpenUrlIPC,
+    shortcutGlobalIPC,
 } = require('qiao-electron');
 
 // electron
 contextBridge.exposeInMainWorld('electron', {
-    darkModeChange,
-    log,
-    lsAll, lsGet, lsSet, lsDel,
-    shellOpenUrl,
-    shortcutGlobal,
+    darkModeChangeIPC,
+    logIPC,
+    lsAllIPC, 
+    lsGetIPC, 
+    lsSetIPC, 
+    lsDelIPC,
+    shellOpenUrlIPC,
+    shortcutGlobalIPC,
 });
